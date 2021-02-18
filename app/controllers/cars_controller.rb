@@ -67,6 +67,7 @@ class CarsController < ApplicationController
       @car = Car.find(params[:id])
     end
 
+
     # Only allow a list of trusted parameters through.
     def car_params
       params.require(:car).permit(:make, :model, :year)
